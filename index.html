@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="./jquery/jquery.js"></script>
+	<script src="./smtp/smtp.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<style>
+		body{
+			background-color: #DCD9D4; 
+		}
+		
+		#_nav{
+			margin: auto;
+			width: 50%;
+			padding: 25px;	
+		}
+		
+		#_nav_list{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			color: black;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 30px;
+		}
+		
+		#_about{
+			margin: auto;
+			padding-top: 10px;
+			padding-left: 50%;
+			color: black;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 25px;
+		}
+		
+		#_about_text{
+			margin: auto;
+			padding-left: 50%;
+			color: black;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 20px;
+		}
+		
+		#_nav_list li{
+			display: inline;
+			margin-right: 20px;
+		}
+		
+		a:link{
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:visited{
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:hover{
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:active{
+			text-decoration: none;
+			color: black;
+		}
+		
+		#_links{
+			margin: auto;
+			padding-left: 48%;
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+		
+		#_links ul{
+			list-style-type: none;
+	
+		}
+
+		#_contact{
+			margin: auto;
+			padding-left: 40%;
+		}
+		
+	</style>
+	<title>Simone Boyd's Portfolio</title>
+</head>
+<body>
+	<div id="_nav">
+		<ul id="_nav_list">
+			<li><u><a href="index.html">Home</a></u></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+		</ul>
+	</div>
+	<hr/>
+	<p id="_about"><u>About Me</u></p>
+	<p id="_about_text"></p>
+	<div id="_links">
+		<ul>
+		<li style="padding-bottom:20px;"><a href="https://www.linkedin.com/in/simone-boyd-9ba811137/"><img src="./assets/linkedin.png" width="80" height="20"></a></li>
+		<li style="padding-bottom:20px;margin-left:-5px;"><a href="https://github.com/cybrog22"><img src="./assets/github.png" width="80" height="33"></a></li>
+		</ul>
+	</div>
+	<form id="_contact">
+		<input type="text" name="email" placeholder="Email" style="display:block;margin-bottom:15px;width:155px;">
+		<input type="text" name="subject" placeholder="Subject" style="display:block;margin-bottom:15px;width:375px;">
+		<textarea name="message" maxlength="200" cols="50" rows="10" style="display:block;resize:none;margin-bottom:15px;">
+		</textarea>
+		<p style="display:block;font-family:'Open Sans Condensed', sans-serif;">200 characters max.</p>
+		<input type="button" name="send" value="Send Message" style="display:block;">
+	</form>
+</body>
+
+<script>
+	//token: ea29267c-5de1-4a98-baaf-96389eee159a 
+	/*Email.send({
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);*/
+</script>
+</html>

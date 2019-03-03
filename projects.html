@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="./jquery/jquery.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<style>
+		body{
+			background-color: #DCD9D4; 
+		}
+		
+		#_nav{
+			margin: auto;
+			width: 50%;
+			padding: 25px;	
+		}
+		
+		#_nav_list{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			color: black;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 30px;
+		}
+		
+		#_nav_list li{
+			display: inline;
+			margin-right: 20px;
+		}
+		
+		a:link{
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:visited{
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:hover{
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:active{
+			text-decoration: none;
+			color: black;
+		}
+		
+		#_projects{
+			margin: auto;
+			padding-left: 10%;
+			padding-top: 100px;
+		}
+		
+		
+	</style>
+	<title>Simone Boyd's Portfolio</title>
+</head>
+<body>
+	<div id="_nav">
+		<ul id="_nav_list">
+			<li><a href="index.html">Home</a></li>
+			<li><u><a href="projects.html">Projects</a></u></li>
+			<li><a href="resume.html">Resume</a></li>
+		</ul>
+	</div>
+	<hr/>
+	<div id="_projects">
+		<div id="_project1" style="display:block;margin-bottom:450px;">
+			<img id="img_main1" src="./assets/clip1.gif" style="display:inline-block;width:500px;height:281px;float:left;">
+			<img id="img_sel1" src="./assets/clip1_prev.png" style="display:inline;block;width:100px;height:56px;float:left;margin-top:310px;margin-left:-500px;">
+			<img id="img_sel2" src="./assets/clip2.png" style="display:inline;block;width:100px;height:56px;float:left;margin-top:310px;margin-left:-390px;">
+			<img id="img_sel3" src="./assets/clip3.png" style="display:inline;block;width:100px;height:56px;float:left;margin-top:310px;margin-left:-280px;">
+			<img id="img_sel4" src="./assets/clip4.png" style="display:inline;block;width:100px;height:56px;float:left;margin-top:310px;margin-left:-170px;">
+			<p style="display:inline;padding-left:60px;font-family:'Open Sans Condensed', sans-serif;">Description</p>
+		</div>
+		<div id="_project2" style="display:block;margin-bottom:350px;">
+			<img src="./assets/placeholder.png" style="display:inline-block;width:300px;height:169px;float:left;">
+			<p style="display:inline;padding-left:60px;font-family:'Open Sans Condensed', sans-serif;">Description</p>
+		</div>
+		<div id="_project3" style="display:block;margin-bottom:350px;">
+			<img src="./assets/placeholder.png" style="display:inline-block;width:300px;height:169px;float:left;">
+			<p style="display:inline;padding-left:60px;font-family:'Open Sans Condensed', sans-serif;">Description</p>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+		$("#img_sel1").click(function(){
+			$("#img_main1").attr("src","./assets/clip1.gif");
+		});
+		
+		$("#img_sel2").click(function(){
+			$("#img_main1").attr("src","./assets/clip2.png");
+		});
+		
+		$("#img_sel3").click(function(){
+			$("#img_main1").attr("src","./assets/clip3.png");
+		});
+		
+		$("#img_sel4").click(function(){
+			$("#img_main1").attr("src","./assets/clip4.png");
+		});
+	});
+	
+</script>
+</html>
